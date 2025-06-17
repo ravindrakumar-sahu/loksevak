@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>जननायक प्रोफ़ाइल</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .card h2 {
+      margin-top: 15px;
+      font-size: 24px;
+      color: #111827;
+    }
+    .card p {
+      margin: 8px 0;
+      color: #374151;
+      font-size: 16px;
+    }
+    .label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="ravindra.jpg" alt="रविन्द्र कुमार साहू">
+    <h2>रविन्द्र कुमार साहू</h2>
+    <p><span class="label">🎓 शिक्षा:</span> MSW</p>
+    <p><span class="label">📍 राज्य:</span> मध्य प्रदेश</p>
+    <p><span class="label">💼 कार्य:</span> जनजागरूकता अभियान</p>
+    <p><span class="label">🧾 विवरण:</span> रविन्द्र कुमार साहू युवाओं में सामाजिक जागरूकता लाने के लिए डिजिटल प्लेटफॉर्म के माध्यम से कार्य कर रहे हैं।</p>
+  </div>
+
+</body>
+</html>
