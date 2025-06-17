@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>नेता प्रोफ़ाइल - लोकसेवक</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+      color: #333;
+    }
+    header, footer {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .profile {
+      background: white;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .profile img {
+      max-width: 200px;
+      float: right;
+      margin-left: 2rem;
+      border-radius: 8px;
+    }
+    .profile h2 {
+      color: #1e3a8a;
+    }
+    .profile p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>नेता प्रोफ़ाइल</h1>
+    <p>Loksevak | सत्यापित जानकारी</p>
+  </header>
+
+  <div class="profile">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Narendra_Modi_2021.jpg" alt="Narendra Modi" />
+    <h2>श्री नरेंद्र मोदी</h2>
+    <p><strong>पार्टी:</strong> भारतीय जनता पार्टी</p>
+    <p><strong>पद:</strong> भारत के प्रधानमंत्री</p>
+    <p><strong>शिक्षा:</strong> M.A. (राजनीति विज्ञान)</p>
+    <p><strong>राजनीतिक अनुभव:</strong> 20+ वर्ष</p>
+    <p><strong>कानूनी स्थिति:</strong> कोई आपराधिक मामला नहीं</p>
+    <p><strong>जनता की राय:</strong> उच्च लोकप्रियता, विकासवादी छवि</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Loksevak | एक प्रयास Ravindra Kumar Sahu द्वारा
+  </footer>
+</body>
+</html>
