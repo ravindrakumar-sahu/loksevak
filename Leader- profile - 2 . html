@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>नेता प्रोफ़ाइल - नरेंद्र मोदी</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-4xl mx-auto p-6 space-y-6 bg-white rounded-xl shadow-lg mt-8">
+    <h1 class="text-3xl font-bold">नरेंद्र मोदी</h1>
+    <p class="text-lg font-medium text-gray-700">भारतीय जनता पार्टी (BJP)</p>
+    <p>🎂 <strong>जन्म:</strong> 17 सितम्बर 1950</p>
+    <p>🎓 <strong>शिक्षा:</strong> B.A. (राजनीति विज्ञान), M.A. (गुजरात विश्वविद्यालय)</p>
+    <p>🪖 <strong>पद:</strong> प्रधानमंत्री (2014–वर्तमान)</p>
+
+    <div>
+      <strong>🧠 गुण:</strong>
+      <div class="flex gap-2 mt-1 flex-wrap">
+        <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">दृढ़ नेतृत्व</span>
+        <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">राष्ट्रवादी दृष्टिकोण</span>
+        <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">तेज वक्ता</span>
+      </div>
+    </div>
+
+    <div>
+      <strong>⚖️ कानूनी स्थिति:</strong>
+      <p>2002 गुजरात दंगों से जुड़ा मामला (SC से क्लीन चिट)</p>
+    </div>
+
+    <div>
+      <strong>🗣️ जनता की राय:</strong>
+      <p>युवाओं और ग्रामीण क्षेत्रों में व्यापक समर्थन</p>
+    </div>
+
+    <div>
+      <strong>📊 सोशल मीडिया लोकप्रियता (मिलियन में):</strong>
+      <canvas id="followersChart" height="200"></canvas>
+    </div>
+
+    <div class="pt-4">
+      <button class="bg-indigo-600 hover:bg-indigo-700 text-white rounded px-4 py-2">जनता की राय दें</button>
+    </div>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('followersChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Twitter', 'Facebook', 'Instagram'],
+        datasets: [{
+          label: 'Followers (in millions)',
+          data: [95, 48, 8],
+          backgroundColor: '#1DA1F2',
+          borderRadius: 4,
+        }]
+      },
+      options: {
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
