@@ -2,101 +2,66 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loksevak - जननायकों की जानकारी</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loksevak – भारतीय जननायकों की जानकारी</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f8f9fa;
-      color: #333;
-    }
-    header {
-      background: url('your-photo.jpg') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    nav {
-      background-color: #002855;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #002855;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin: 0.5rem 0;
-    }
-    footer {
-      background-color: #002855;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    footer a {
-      color: white;
-      margin: 0 0.5rem;
-    }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f8f9fa; color: #333; scroll-behavior: smooth; }
+    header { background: url('https://source.unsplash.com/1600x600/?india,parliament') no-repeat center/cover; color: white; text-align: center; padding: 150px 20px 120px; }
+    header h1 { font-size: 3rem; margin: 0; text-shadow: 2px 2px 8px rgba(0,0,0,0.5); }
+    header p { font-size: 1.25rem; margin: 1rem 0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
+    .cta { margin-top: 2rem; }
+    .cta a { background: #fed766; color: #000; padding: 0.75rem 1.5rem; margin: 0 0.5rem; border-radius: 5px; font-weight: bold; text-decoration: none; }
+    nav { background: #1e3a8a; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .section { padding: 3rem 1rem; max-width: 900px; margin: auto; background: white; margin-top: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .section h2 { color: #1e3a8a; }
+    .section ul { list-style: none; padding-left: 0; }
+    .section ul li { margin: 0.5rem 0; }
+    footer { background: #1e3a8a; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    footer a { color: white; margin: 0 0.5rem; text-decoration: none; font-weight: bold; }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>स्वागत है लोकसेवक पोर्टल पर</h1>
-    <p>यहाँ आप जननायकों की जानकारी, प्रोफाइल और जनसंपर्क विकल्प देख सकते हैं।</p>
+    <h1>Loksevak</h1>
+    <p>भारतीय जननायकों की निष्पक्ष, सत्य और व्यवस्थित जानकारी का भरोसेमंद स्रोत</p>
+    <div class="cta">
+      <a href="#about">हमारे बारे में</a>
+      <a href="#forms">फॉर्म भरें</a>
+      <a href="leader-profile-1.html">प्रोफाइल देखें</a>
+    </div>
   </header>
 
   <nav>
     <a href="#about">हमारे बारे में</a>
     <a href="#profiles">प्रोफाइल</a>
-    <a href="#forms">Google Forms</a>
+    <a href="#forms">Forms</a>
   </nav>
 
-  <section id="about">
+  <div class="section" id="about">
     <h2>हमारे बारे में</h2>
-    <p>Loksevak एक स्वतंत्र पोर्टल है जो भारतीय जननायकों की सत्य, निष्पक्ष और सुलभ जानकारी हिंदी भाषा में प्रस्तुत करता है। हमारा उद्देश्य जनता को सशक्त बनाना है ताकि वे अपने प्रतिनिधियों को बेहतर समझ सकें।</p>
-  </section>
+    <p>Loksevak एक स्वतंत्र पोर्टल है जो भारतीय जननायकों की सत्य, निष्पक्ष और सुलभ जानकारी हिंदी में प्रस्तुत करता है।
+    हमारा उद्देश्य जनता को सशक्त बनाना है ताकि वे अपने प्रतिनिधियों को बेहतर समझ सकें।</p>
+  </div>
 
-  <section id="profiles">
+  <div class="section" id="profiles">
     <h2>जननायक प्रोफाइल</h2>
     <ul>
       <li>👤 <a href="leader-profile-1.html">जननायक प्रोफाइल (HTML Version)</a></li>
       <li>⚛️ <a href="leader-profile-2.html">जननायक प्रोफाइल 2 (React Preview)</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section id="forms">
+  <div class="section" id="forms">
     <h2>Google Forms</h2>
     <ul>
-      <li>📋 <a href="https://forms.gle/JgTvvoM5LPEp5HzQ6" target="_blank">जनता की राय फॉर्म</a></li>
+      <li>📋 <a href="https://forms.gle/AJsUSvkPd7e9Nwke8" target="_blank">जनता की राय फॉर्म</a></li>
       <li>📌 <a href="https://forms.gle/pXyveFeSuQ97bDbPA" target="_blank">जननायक सुझाव फॉर्म</a></li>
       <li>📞 <a href="https://forms.gle/ugBWJt1hvGUaujiY8" target="_blank">सम्पर्क करें फॉर्म</a></li>
     </ul>
-  </section>
+  </div>
 
   <footer>
     <p>&copy; 2025 Loksevak | Developed by Ravindra Kumar Sahu</p>
