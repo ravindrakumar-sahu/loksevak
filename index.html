@@ -6,150 +6,62 @@
   <title>Loksevak - जननायकों की जानकारी</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Noto Sans Devanagari", sans-serif;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
-      background-color: #f0f4f8;
-      color: #222;
+      color: #333;
     }
-    header {
-      background-color: #1e40af;
+    header, footer {
+      background-color: #194569;
       color: white;
       text-align: center;
-      padding: 2rem;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    nav {
-      background-color: #1e3a8a;
-      padding: 1rem;
-      text-align: center;
+      padding: 20px;
     }
     nav a {
+      margin: 0 15px;
       color: white;
-      margin: 0 1rem;
       text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-      background: white;
-      border-radius: 8px;
     }
     section {
-      margin-bottom: 2rem;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
     }
-    section h2 {
-      color: #1e3a8a;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
+    h1, h2 {
+      color: #194569;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
     }
     ul li {
-      margin: 0.5rem 0;
+      padding: 8px 0;
     }
-    a.button {
-      display: inline-block;
-      margin: 1rem 0.5rem;
-      padding: 0.7rem 1.2rem;
-      background-color: #1e40af;
-      color: white;
+    a {
+      color: #194569;
       text-decoration: none;
-      border-radius: 5px;
     }
-    a.button:hover {
-      background-color: #3749d3;
-    }
-    footer {
-      background-color: #1e40af;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    .social a {
-      color: white;
-      margin: 0 0.5rem;
-      text-decoration: none;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Loksevak</h1>
     <p>भारतीय जननायकों की निष्पक्ष, सत्य और व्यवस्थित जानकारी का भरोसेमंद स्रोत</p>
+    <nav>
+      <a href="#about">हमारे बारे में</a>
+      <a href="#profiles">प्रोफाइल</a>
+      <a href="#forms">फॉर्म</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">हमारे बारे में</a>
-    <a href="#profiles">प्रोफाइल</a>
-    <a href="#forms">फॉर्म भरें</a>
-    <a href="#contact">संपर्क</a>
-  </nav>
+  <section id="about">
+    <h2>हमारे बारे में</h2>
+    <p>Loksevak एक स्वतंत्र पोर्टल है जो भारतीय जननायकों की सत्य, निष्पक्ष और सुलभ जानकारी हिंदी भाषा में प्रस्तुत करता है। हमारा उद्देश्य जनता को सशक्त बनाना है ताकि वे अपने प्रतिनिधियों को बेहतर समझ सकें।</p>
+  </section>
 
-  <main>
-    <section id="about">
-      <h2>हमारे बारे में</h2>
-      <p>Loksevak एक स्वतंत्र पोर्टल है जो भारतीय जननायकों की सत्य, निष्पक्ष और सुलभ जानकारी हिंदी भाषा में प्रस्तुत करता है। हमारा उद्देश्य जनता को सशक्त बनाना है ताकि वे अपने प्रतिनिधियों को बेहतर समझ सकें।</p>
-    </section>
-
-    <section id="profiles">
-      <h2>जननायक प्रोफाइल</h2>
-      <ul>
-        <li>👤 <a href="leader-profile-1.html" target="_blank">जननायक प्रोफाइल (HTML Version)</a></li>
-        <li>⚛️ <a href="leader-profile-2.html" target="_blank">जननायक प्रोफाइल 2 (React Preview)</a></li>
-      </ul>
-    </section>
-<section id="forms">
-  <h2>📝 Google Forms</h2>
-  <ul>
-    <li>📋 <a href="https://forms.gle/X6pM3gbHpWUmABLg8" target="_blank">जनता की राय फॉर्म</a></li>
-    <li>📌 <a href="https://forms.gle/pXyveFeSuQ97bDbPA" target="_blank">जननायक सुझाव फॉर्म</a></li>
-    <li>📞 <a href="https://forms.gle/ugBWJt1hvGUaujiY8" target="_blank">संपर्क करें फॉर्म</a></li>
-    <li>🔒 <a href="https://forms.gle/AJsUSvkPd7e9Nwke8" target="_blank">Admin-only फॉर्म</a></li>
-  </ul>
-</section>
-    
-  <h2>Google Forms</h2>
-  <ul>
-    <li>📋 <a href="https://forms.gle/X6pM3gbHpWUmABLg8" target="_blank">जनता की राय फॉर्म</a></li>
-    <li>📌 <a href="https://forms.gle/pXyveFeSuQ97bDbPA" target="_blank">जननायक सुझाव फॉर्म</a></li>
-    <li>📞 <a href="https://forms.gle/ugBWJt1hvGUaujiY8" target="_blank">संपर्क करें फॉर्म</a></li>
-    <li>🔒 <a href="https://forms.gle/AJsUSvkPd7e9Nwke8" target="_blank">Admin-Only Form</a></li>
-  </ul>
-</section>
-      <h2>Google Forms</h2>
-      <ul>
-        <li>📋 <a href="https://forms.gle/X6pM3gbHpWUmABLg8" target="_blank">जनता की राय फॉर्म</a></li>
-        <li>📌 <a href="https://forms.gle/pXyveFeSuQ97bDbPA" target="_blank">जननायक सुझाव फॉर्म</a></li>
-        <li>📞 <a href="https://forms.gle/ugBWJt1hvGUaujiY8" target="_blank">संपर्क करें फॉर्म</a></li>
-        <li>🔒 <a href="https://forms.gle/AJsUSvkPd7e9Nwke8" target="_blank">Admin-Only Form</a></li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>हमसे संपर्क करें</h2>
-      <p>आप हमें सोशल मीडिया या WhatsApp पर भी संपर्क कर सकते हैं:</p>
-      <div class="social">
-        🔗 <a href="https://www.facebook.com/ravindra.sahu.540048/" target="_blank">Facebook</a> |
-        📸 <a href="https://www.instagram.com/sahuravi_27/" target="_blank">Instagram</a> |
-        💬 <a href="https://wa.me/919713469662" target="_blank">WhatsApp</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Loksevak | Developed by Ravindra Kumar Sahu</p>
-  </footer>
-
-</body>
-</html>
+  <section id="profiles">
+    <h2>जननायक प्रोफ़ाइल
