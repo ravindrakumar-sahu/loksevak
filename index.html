@@ -1,76 +1,42 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Loksevak – भारतीय जननायकों की जानकारी</title>
-  <style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f8f9fa; color: #333; scroll-behavior: smooth; }
-    header { background: url('https://source.unsplash.com/1600x600/?india,parliament') no-repeat center/cover; color: white; text-align: center; padding: 150px 20px 120px; }
-    header h1 { font-size: 3rem; margin: 0; text-shadow: 2px 2px 8px rgba(0,0,0,0.5); }
-    header p { font-size: 1.25rem; margin: 1rem 0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
-    .cta { margin-top: 2rem; }
-    .cta a { background: #fed766; color: #000; padding: 0.75rem 1.5rem; margin: 0 0.5rem; border-radius: 5px; font-weight: bold; text-decoration: none; }
-    nav { background: #1e3a8a; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; }
-    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    .section { padding: 3rem 1rem; max-width: 900px; margin: auto; background: white; margin-top: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .section h2 { color: #1e3a8a; }
-    .section ul { list-style: none; padding-left: 0; }
-    .section ul li { margin: 0.5rem 0; }
-    footer { background: #1e3a8a; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
-    footer a { color: white; margin: 0 0.5rem; text-decoration: none; font-weight: bold; }
-  </style>
-</head>
-<body>
+<section id="contact" style="max-width:600px;margin:auto;padding:2rem;">
+  <h2 style="color:#d97706;">📞 संपर्क करें</h2>
 
-  <header>
-    <h1>Loksevak</h1>
-    <p>भारतीय जननायकों की निष्पक्ष, सत्य और व्यवस्थित जानकारी का भरोसेमंद स्रोत</p>
-    <div class="cta">
-      <a href="#about">हमारे बारे में</a>
-      <a href="#forms">फॉर्म भरें</a>
-      <a href="leader-profile-1.html">प्रोफाइल देखें</a>
-    </div>
-  </header>
+  <form id="loksevakForm">
+    <label>आपका नाम</label><br>
+    <input type="text" name="name" required style="width:100%;padding:8px"><br><br>
 
-  <nav>
-    <a href="#about">हमारे बारे में</a>
-    <a href="#profiles">प्रोफाइल</a>
-    <a href="#forms">Forms</a>
-  </nav>
+    <label>ई‑मेल</label><br>
+    <input type="email" name="email" required style="width:100%;padding:8px"><br><br>
 
-  <div class="section" id="about">
-    <h2>हमारे बारे में</h2>
-    <p>Loksevak एक स्वतंत्र पोर्टल है जो भारतीय जननायकों की सत्य, निष्पक्ष और सुलभ जानकारी हिंदी में प्रस्तुत करता है।
-    हमारा उद्देश्य जनता को सशक्त बनाना है ताकि वे अपने प्रतिनिधियों को बेहतर समझ सकें।</p>
-  </div>
+    <label>संदेश</label><br>
+    <textarea name="message" rows="4" required style="width:100%;padding:8px"></textarea><br><br>
 
-  <div class="section" id="profiles">
-    <h2>जननायक प्रोफाइल</h2>
-    <ul>
-      <li>👤 <a href="leader-profile-1.html">जननायक प्रोफाइल (HTML Version)</a></li>
-      <li>⚛️ <a href="leader-profile-2.html">जननायक प्रोफाइल 2 (React Preview)</a></li>
-    </ul>
-  </div>
+    <button type="submit" style="background:#1e3a8a;color:#fff;padding:10px 20px;border:none;border-radius:5px">
+      📤 भेजें
+    </button>
+    <span id="formStatus" style="margin-left:10px;"></span>
+  </form>
 
-  <div class="section" id="forms">
-    <h2>Google Forms</h2>
-    <ul>
-      <li>📋 <a href="https://forms.gle/AJsUSvkPd7e9Nwke8" target="_blank">जनता की राय फॉर्म</a></li>
-      <li>📌 <a href="https://forms.gle/pXyveFeSuQ97bDbPA" target="_blank">जननायक सुझाव फॉर्म</a></li>
-      <li>📞 <a href="https://forms.gle/ugBWJt1hvGUaujiY8" target="_blank">सम्पर्क करें फॉर्म</a></li>
-    </ul>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Loksevak | Developed by Ravindra Kumar Sahu</p>
-    <p>
-      <a href="https://www.facebook.com/ravindra.sahu.540048/" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com/sahuravi_27/" target="_blank">Instagram</a> |
-      <a href="https://wa.me/919713469662" target="_blank">WhatsApp</a>
-    </p>
-  </footer>
-
-</body>
-</html>
+  <script>
+  const form = document.getElementById('loksevakForm');
+  const status = document.getElementById('formStatus');
+  form.addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      status.textContent = '… भेजा जा रहा है';
+      const data = Object.fromEntries(new FormData(form).entries());
+      try {
+        const res = await fetch('YOUR_WEB_APP_URL_HERE', {   // ← यहाँ Apps‑Script URL रखें
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body: JSON.stringify(data)
+        });
+        if(res.ok){
+          status.textContent='✅ धन्यवाद! संदेश पहुँच गया।';
+          form.reset();
+        } else { throw new Error(); }
+      } catch(err){
+        status.textContent='❌ कुछ त्रुटि हुई, बाद में प्रयास करें';
+      }
+  });
+  </script>
+</section>
