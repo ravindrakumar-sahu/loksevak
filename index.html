@@ -1,77 +1,141 @@
-!-- Hero Section -->
-<section id="hero" style="
-  background: url('india-map-light.png') center/cover no-repeat, linear-gradient(rgba(0,100,0,0.6), rgba(0,100,0,0.6));
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-">
-  <h1 style="font-size:3rem; margin-bottom:0.5rem;">Loksevak</h1>
-  <p style="font-size:1.5rem; margin-bottom:1.5rem;">
-    भारतीय जननायकों की निष्पक्ष, सत्य और व्यवस्थित जानकारी का भरोसेमंद स्रोत
-  </p>
-  <a href="#profiles" style="
-    display:inline-block;
-    margin:0 10px;
-    padding:15px 30px;
-    background:#FFC107; /* नारंगी */
-    color:#2b2b8f;      /* गहरा नीला */
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-  ">प्रोफ़ाइल देखें</a>
-  <a href="#forms" style="
-    display:inline-block;
-    margin:0 10px;
-    padding:15px 30px;
-    background:#4CAF50; /* हरा */
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-  ">फॉर्म भरें</a>
-</section>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loksevak</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: url('india-map-bg.jpg') no-repeat center top / cover;
+      color: #000;
+    }
 
-<!-- हमारा उद्देश्य (Condensed) -->
-<section id="purpose" style="padding:60px 20px; text-align:center; background:#ffffff;">
-  <h2 style="color:#2b2b8f;">🎯 हमारा उद्देश्य</h2>
-  <p style="font-size:1.2rem; max-width:700px; margin:auto;">
-    Loksevak का उद्देश्य है—भारतीय नागरिकों को उनके प्रतिनिधियों की शिक्षा, कार्य और लोकप्रियता सहित
-    सभी जानकारियाँ एक ही स्थान पर सरल और विश्वसनीय रूप से उपलब्ध कराना।
-  </p>
-</section>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffffcc;
+      padding: 10px 20px;
+      border-bottom: 2px solid #ccc;
+    }
 
-<!-- जननायक प्रोफ़ाइल (Cards) -->
-<section id="profiles" style="padding:60px 20px; background:#f9f9f9; text-align:center;">
-  <h2 style="color:#2b2b8f;">📄 जननायक प्रोफ़ाइल</h2>
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:40px;">
-    <!-- एक उदाहरण कार्ड -->
-    <div style="background:white; width:280px; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
-      <h3>👤 नरेंद्र मोदी</h3>
-      <p>प्रधानमंत्री, भारतीय जनता पार्टी</p>
-      <a href="leader-profile-1.html" style="color:#4CAF50; text-decoration:none;">और पढ़ें →</a>
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #1a237e;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: #1b5e20;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #424242;
+      margin-top: 10px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #2e7d32;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: #0d47a1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="title">Loksevak</div>
+    <div class="logo">
+      <img src="logo.png" alt="Loksevak Logo">
     </div>
-    <!-- यहां और कार्ड्स जोड़ें -->
-  </div>
-</section>
+  </header>
 
-<!-- Direct Form Buttons -->
-<section id="quick-forms" style="padding:60px 20px; text-align:center; background:#ffffff;">
-  <h2 style="color:#2b2b8f;">📩 सीधे फ़ॉर्म पर जाएँ</h2>
-  <a href="https://forms.gle/vKaSzchMiRcUpX1h8" style="
-    display:inline-block; margin:10px; padding:12px 25px;
-    background:#FFC107; color:#2b2b8f; text-decoration:none; border-radius:5px;
-  ">नेता सुझाव भेजें</a>
-  <a href="https://forms.gle/X6pM3gbHpWUmABLg8" style="
-    display:inline-block; margin:10px; padding:12px 25px;
-    background:#4CAF50; color:white; text-decoration:none; border-radius:5px;
-  ">जनता की राय दें</a>
-</section>
+  <section class="hero">
+    <h1>भारतीय जननायकों की निष्पक्ष, सत्य और व्यवस्थित जानकारी का भरोसेमंद स्रोत</h1>
+    <p>जनता का मंच, जनता का चुनाव — अब जनता खुद चुने नेता</p>
+    <div class="buttons">
+      <a href="#profiles">प्रोफ़ाइल देखें</a>
+      <a href="#forms">फॉर्म भरें</a>
+    </div>
+  </section>
 
-<!-- Footer with Social Icons -->
-<footer style="background:#2b2b8f; color:white; text-align:center; padding:30px 20px;">
-  <p>हमें फॉलो करें:</p>
-  <a href="https://www.facebook.com/ravindra.sahu.540048/" style="margin:0 10px; color:#FFC107;">Facebook</a>
-  <a href="https://www.instagram.com/sahuravi_27/" style="margin:0 10px; color:#FFC107;">Instagram</a>
-  <a href="https://wa.me/919713469662" style="margin:0 10px; color:#FFC107;">WhatsApp</a>
-  <p style="margin-top:20px;">© 2025 Loksevak | Developed by Ravindra Kumar Sahu</p>
-</footer>
+  <section id="profiles" style="text-align:center;">
+    <h2>📄 जनसेवक प्रोफ़ाइल</h2>
+    <p>👤 नरेंद्र मोदी<br>प्रधानमंत्री, भारतीय जनता पार्टी</p>
+    <a href="#">और पढ़ें →</a>
+  </section>
+
+  <section id="forms" style="text-align:center; margin-top: 40px;">
+    <h2>📩 सीधे फ़ॉर्म पर जाएँ</h2>
+    <div class="buttons">
+      <a href="https://forms.gle/pXyveFeSuQ97bDbPA">नेता सुझाव भेजें</a>
+      <a href="https://forms.gle/X6pM3gbHpWUmABLg8">जनता की राय दें</a>
+      <a href="https://forms.gle/ugBWJt1hvGUaujiY8">संपर्क करें</a>
+      <a href="https://forms.gle/JgTvvoM5LPEp5HzQ6">🔒 Admin-only फॉर्म</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social">
+      हमें फॉलो करें:
+      <a href="https://www.facebook.com/ravindra.sahu.540048/">Facebook</a>
+      <a href="https://www.instagram.com/sahuravi_27/">Instagram</a>
+      <a href="https://wa.me/919713469662">WhatsApp</a>
+    </div>
+    <div style="margin-top:10px;">
+      © 2025 Loksevak | Developed by Ravindra Kumar Sahu
+    </div>
+  </footer>
+
+</body>
+</html>
