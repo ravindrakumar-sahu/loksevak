@@ -1,141 +1,27 @@
 <!DOCTYPE html>
 <html lang="hi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Loksevak</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: url('india-map-bg.jpg') no-repeat center top / cover;
-      color: #000;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #ffffffcc;
-      padding: 10px 20px;
-      border-bottom: 2px solid #ccc;
-    }
-
-    .title {
-      font-size: 24px;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-
-    .logo img {
-      height: 60px;
-    }
-
-    nav {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #1a237e;
-      font-weight: bold;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 60px 20px 40px;
-    }
-
-    .hero h1 {
-      font-size: 36px;
-      color: #1b5e20;
-    }
-
-    .hero p {
-      font-size: 20px;
-      color: #424242;
-      margin-top: 10px;
-    }
-
-    .buttons {
-      margin-top: 30px;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
-      background-color: #2e7d32;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    footer {
-      margin-top: 60px;
-      text-align: center;
-      padding: 20px;
-      background-color: #f1f1f1;
-      font-size: 14px;
-      border-top: 1px solid #ccc;
-    }
-
-    .social a {
-      margin: 0 10px;
-      color: #0d47a1;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <div class="title">Loksevak</div>
-    <div class="logo">
-      <img src="logo.png" alt="Loksevak Logo">
-    </div>
-  </header>
-
-  <section class="hero">
-    <h1>भारतीय जननायकों की निष्पक्ष, सत्य और व्यवस्थित जानकारी का भरोसेमंद स्रोत</h1>
-    <p>जनता का मंच, जनता का चुनाव — अब जनता खुद चुने नेता</p>
-    <div class="buttons">
-      <a href="#profiles">प्रोफ़ाइल देखें</a>
-      <a href="#forms">फॉर्म भरें</a>
-    </div>
-  </section>
-
-  <section id="profiles" style="text-align:center;">
-    <h2>📄 जनसेवक प्रोफ़ाइल</h2>
-    <p>👤 नरेंद्र मोदी<br>प्रधानमंत्री, भारतीय जनता पार्टी</p>
-    <a href="#">और पढ़ें →</a>
-  </section>
-
-  <section id="forms" style="text-align:center; margin-top: 40px;">
-    <h2>📩 सीधे फ़ॉर्म पर जाएँ</h2>
-    <div class="buttons">
-      <a href="https://forms.gle/pXyveFeSuQ97bDbPA">नेता सुझाव भेजें</a>
-      <a href="https://forms.gle/X6pM3gbHpWUmABLg8">जनता की राय दें</a>
-      <a href="https://forms.gle/ugBWJt1hvGUaujiY8">संपर्क करें</a>
-      <a href="https://forms.gle/JgTvvoM5LPEp5HzQ6">🔒 Admin-only फॉर्म</a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="social">
-      हमें फॉलो करें:
-      <a href="https://www.facebook.com/ravindra.sahu.540048/">Facebook</a>
-      <a href="https://www.instagram.com/sahuravi_27/">Instagram</a>
-      <a href="https://wa.me/919713469662">WhatsApp</a>
-    </div>
-    <div style="margin-top:10px;">
-      © 2025 Loksevak | Developed by Ravindra Kumar Sahu
-    </div>
-  </footer>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Loksevak – भारत का पहला पब्लिक डिजिटल मंच जहां जनता खुद जनसेवक चुनती है।"
+    />
+    <title>Loksevak – भारत के जनसेवक, जनता के द्वारा</title>
+    <link rel="icon" href="/logo.png" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: url('https://upload.wikimedia.org/wikipedia/commons/3/3f/India_location_map.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>इस वेबसाइट को चलाने के लिए JavaScript आवश्यक है।</noscript>
+    <div id="root"></div>
+  </body>
 </html>
